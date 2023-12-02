@@ -32,3 +32,13 @@ var expectNull = numberWords.FirstOrDefault(numberWords => numberWords.Key == "b
 var expectZero = numberWords.FirstOrDefault(numberWords => numberWords.Key == "zero").Value; // Returns 0
 
 ```
+
+## Day Two
+
+I found this much simpler than Day One. Most of the time was taken parsing the text.
+
+For Part 2, I wrote a test to ensure that every line had at least one draw of each color. I've learned from previous years and other challenges that they can throw bad data at you, and since the value they were looking for was a product, any missing values was going to return 0.
+
+### TIL (or was reminded)
+
+- Nothing, really. Knowledge of LINQ's "All" statement made this a snap.
