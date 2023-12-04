@@ -42,3 +42,11 @@ For Part 2, I wrote a test to ensure that every line had at least one draw of ea
 ### TIL (or was reminded)
 
 - Nothing, really. Knowledge of LINQ's "All" statement made this a snap.
+
+## Day Three
+
+More dictionaries. No time to share thoughts tonight; day job work to do.
+
+### TIL (or was reminded)
+
+- Sometimes good enough is good enough. 100% sure this is not optimal code, but it'll do, pig.
