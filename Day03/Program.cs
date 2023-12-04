@@ -36,7 +36,7 @@ foreach (var file in files01)
     Console.WriteLine($"Total: {count}\n");
 }
 
-Console.WriteLine("Part 01");
+Console.WriteLine("Part 02");
 var files02 = new List<(string Title, string Path)> { ("Test Inputs", ".\\inputs\\inputTest01.txt"), ("Puzzle Inputs", ".\\inputs\\input.txt") };
 foreach (var file in files02)
 {
