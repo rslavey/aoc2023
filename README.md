@@ -50,3 +50,11 @@ More dictionaries. No time to share thoughts tonight; day job work to do.
 ### TIL (or was reminded)
 
 - Sometimes good enough is good enough. 100% sure this is not optimal code, but it'll do, pig.
+
+## Day Four
+
+My mind immediately went to recursion when I read Part 02, but after further consideration, it looked like a dictionary was once again sufficient. Pretty happy with the simplicity of this one and how quickly it runs.
+
+### TIL (or was reminded)
+
+- ```StringSplitOptions.RemoveEmptyEntries``` for those pesky spaces
