@@ -75,8 +75,6 @@ I'll admit this one stumped me for quite a while. I knew *what* to do, but my nu
 
 A pleasant respite after yesterday. Probably would've been at least close to the top 100, but I waited until 30m prior to the challenge to install Visual Studio on my laptop. Who'd've thought that wouldn't be enough time to install and configure it.
 
-In fact, I bet a math person would've done part 2 in about 10 seconds. 61677571x - x^2 > 430103613071150
-
 ### TIL (or was reminded)
 
 - You'd think I would have learned my lesson when it was just two three days ago that I said, "Good enough is good enough." Got the answers, then went back and refactored it to reduce the time by...about 300ms.
