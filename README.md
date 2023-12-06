@@ -58,3 +58,26 @@ My mind immediately went to recursion when I read Part 02, but after further con
 ### TIL (or was reminded)
 
 - ```StringSplitOptions.RemoveEmptyEntries``` for those pesky spaces
+
+## Day Five
+
+I knew going into this one we were going to have to use long (Int64) variables. That means no built-in Range functionality. I also assumed brute force wasn't going to cut it once I saw the test data. Sure enough, Part 2 having billions of numbers was going to be a deal breaker for testing every value.
+
+I'll admit this one stumped me for quite a while. I knew *what* to do, but my numbers were just never adding up, so I did what I always do and broke it all down into distinct variables so I could step through it. Sure enough, I was not setting my ranges correctly (my end values were inclusive). Once I fixed that, I was getting the correct answer, and, more importantly, in milliseconds.
+
+### TIL (or was reminded)
+
+- Aggregate works great in most cases, but I probably forced it here where a for loop would've been just fine.
+- Classes and methods are your friends. Kept rewriting the source/destination logic until I realized I could just dump it into a method and never think about it again.
+- Ranges; oof. Every time I think I'm a decent programmer, it's shit like this that reminds me why I'm a data guy and not a math guy.
+
+## Day Six
+
+A pleasant respite after yesterday. Probably would've been at least close to the top 100, but I waited until 30m prior to the challenge to install Visual Studio on my laptop. Who'd've thought that wouldn't be enough time to install and configure it.
+
+In fact, I bet a math person would've done part 2 in about 10 seconds. 61677571x - x^2 > 430103613071150
+
+### TIL (or was reminded)
+
+- You'd think I would have learned my lesson when it was just two three days ago that I said, "Good enough is good enough." Got the answers, then went back and refactored it to reduce the time by...about 300ms.
+
