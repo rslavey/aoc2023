@@ -79,3 +79,23 @@ A pleasant respite after yesterday. Probably would've been at least close to the
 
 - You'd think I would have learned my lesson when it was just two three days ago that I said, "Good enough is good enough." Got the answers, then went back and refactored it to reduce the time by...about 300ms.
 
+## Day Seven
+
+A custom IComparer and a quick fix for the exception "JJJJJ". Got stuck for a while because I had 
+
+```cs
+int GetCardValue (int a)
+```
+instead of
+
+```cs
+int GetCardValue (char a)
+```
+
+and the code was happy to take 'K' as an int and use its ascii value
+
+### TIL (or was reminded)
+
+- If you want two comparers that are just a little different, you can pass a value when you new it up and use that to tweak the Compare() method
+
+
