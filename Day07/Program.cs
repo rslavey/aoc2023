@@ -12,17 +12,13 @@ for (var part = 1; part <= 2; part++)
     foreach (var file in files01)
     {
         var lines = File.ReadAllLines(file.Path);
-        var test = lines.Select(x => x.Split(' ', StringSplitOptions.RemoveEmptyEntries))
-            .Select(x => new CamelHand { Hand = x[0].Trim(), Bid = int.Parse(x[1].Trim()) })
-            .OrderBy(x => x, new HigherHand(part == 2))
-            .ToList();
 
-        var score = 0;
-        for (var i = 1; i <= test.Count(); i++)
-        {
-            score += test[i-1].Bid * i;
-        }
-        Console.WriteLine($"Score: {score}");
+        Console.WriteLine($@"Score: {lines.Select(x => x.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+			.Select(x => new CamelHand { Hand = x[0].Trim(), Bid = int.Parse(x[1].Trim()) })
+			.OrderBy(x => x, new HigherHand(part == 2))
+			.Select((x, i) => x.Bid * (i + 1))
+			.ToList()
+			.Sum()}");
     }
 }
 
@@ -85,14 +81,7 @@ public class HigherHand : IComparer<CamelHand>
     {
         var numCount = a.Distinct().Count();
         var numFreq = a.GroupBy(x => x).Max(x => x.Count());
-
-        return numCount == 5 ? 1 :
-            numCount == 4 ? 2 :
-            numCount == 3 && numFreq == 2 ? 3 :
-            numCount == 3 && numFreq == 3 ? 4 :
-            numCount == 2 && numFreq == 3 ? 5 :
-            numCount == 2 && numFreq == 4 ? 6 :
-            7;
+		return 5 - numCount + numFreq;
     }
     int[] GetWildHandRanking(string v)
     {
