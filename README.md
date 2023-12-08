@@ -98,4 +98,13 @@ and the code was happy to take 'K' as an int and use its ascii value
 
 - If you want two comparers that are just a little different, you can pass a value when you new it up and use that to tweak the Compare() method
 
+## Day Eight
 
+There are a few functions you should always have on hand when doing programming challenges because it is inevitable that at some point you're going to need a quick prime number check or a greatest common denominator.
+
+I'm not quite satisfied with this one. I have to do a lookup on the Dictionary to return the whole KeyValuePair so I can do a string search of the key. I'm sure there's a better way to still get the value of the hash of the Dictionary, but a couple of seconds was fast enough.
+
+### TIL (or was reminded)
+
+- Always have your GCD, LCM, and IsPrime functions handy
+- Lambda switches are fun
