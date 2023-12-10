@@ -108,3 +108,11 @@ I'm not quite satisfied with this one. I have to do a lookup on the Dictionary t
 
 - Always have your GCD, LCM, and IsPrime functions handy
 - Lambda switches are fun
+
+## Day Nine
+
+This one was kind of weird. I thought there'd be some confusing thing about it not working with large sets unless you do some math or something, but all I did was follow the instructions in the challenge and immediately got the right answers on both parts.
+
+### TIL (or was reminded)
+
+- Follow the directions?
