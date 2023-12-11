@@ -116,3 +116,13 @@ This one was kind of weird. I thought there'd be some confusing thing about it n
 ### TIL (or was reminded)
 
 - Follow the directions?
+
+## Day Ten
+
+This was a tough one. I thought I could maybe use Pick's Theorem but in reverse (i.e., I can get the area and then want to know the number of integers in the polygon). Alas, the "holes" and the "can fit between pipes" made this impractical.
+
+Instead, I learned way more than I intended about ray tracing and polygons, with the help of https://wrfranklin.org/Research/Short_Notes/pnpoly.html
+
+### TIL (or was reminded)
+
+- Lots of weird geometry stuff, but also some cool logic regarding how things like the polygon lasso tool (might) work in Photoshop.
